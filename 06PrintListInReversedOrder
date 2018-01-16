@@ -1,0 +1,21 @@
+#include <iostream>
+#include <vector>
+
+struct ListNode{
+	int m_nKey;
+	ListNode *m_pNext;
+};
+
+void PrintListInReversedOrder(ListNode *pHead) {
+	std::vector<int> stack_;
+	ListNode *p = pHead;
+	while (p) {
+		stack_.push_back(p->m_nKey);
+		p = p->m_pNext;
+	}
+	for (auto val : stack_)
+	{
+		std::cout << val << std::endl;
+	}
+	return;
+}
