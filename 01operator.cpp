@@ -55,13 +55,13 @@ CMyString& CMyString::operator = (const CMyString& other) {
 	}
 }
 
-void test() {
+void Test() {
 	CMyString ms("hello");
 	CMyString ms2;
 	CMyString ms3;
 	ms3= ms2 = ms;
 }
 int main() {
-	test();
+	Test();
 	return 0;
 }
