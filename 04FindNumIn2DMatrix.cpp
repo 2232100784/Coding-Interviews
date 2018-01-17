@@ -2,7 +2,7 @@
 #include <assert.h>
 using namespace std;
 
-void find(int *mat, int rows, int cols, int tar) {
+void FindNumInMatrix(int *mat, int rows, int cols, int tar) {
 	bool result = false;
 	assert(mat != 0 && rows > 0 && cols > 0);
 	int x = cols - 1;
@@ -24,20 +24,20 @@ void find(int *mat, int rows, int cols, int tar) {
 	return;
 }
 
-void test1() {
+void Test1() {
 	int a[4][4] = { { 1, 2, 8, 9 }, { 2, 4, 9, 12 }, { 4, 7, 10, 13 }, { 6, 8, 11, 15 } };
-	find(a[0], 4, 4, 6);
+	FindNumInMatrix(a[0], 4, 4, 6);
 	return ;
 }
 
-void test2() {
+void Test2() {
 	int a[4][4] = { { 1, 2, 8, 9 }, { 2, 4, 9, 12 }, { 4, 7, 10, 13 }, { 6, 8, 11, 15 } };
-	find(a[0], 4, 4, 17);
+	FindNumInMatrix(a[0], 4, 4, 17);
 	return ;
 }
 
 int main() {
-	test1();
-  test2();
+	Test1();
+	Test2();
 	return 0;
 }
