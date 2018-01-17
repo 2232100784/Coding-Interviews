@@ -46,7 +46,7 @@ long long Fibonacci(long long n){
 	return result;
 }
 
-void test1(){
+void Test1(){
 	long long c = 0;
 	long long *count = &c;
 	long long result1 = Fibonacci_recursion(42, count);
@@ -54,19 +54,19 @@ void test1(){
 	std::cout << *count  << std::endl;
 }
 
-void test2(){
+void Test2(){
 	long long result2 = Fibonacci_stack(70);
 	std::cout << result2 << std::endl;
 }
 
-void test3(){
+void Test3(){
 	long long result2 = Fibonacci(8);
 	std::cout << result2 << std::endl;
 }
 
 int main() {
-	//test1();
-	//test2();
-	test3();
+	Test1();
+	Test2();
+	Test3();
 	return 0;
 }
